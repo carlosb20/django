@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+def index(request):
+    text = {'projeto':'funcao index '}
+
+    return render(request,'index.html',text)
+
+def contado(request):
+    return render(request,'contato.html')
+
+    
