@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p> carlos alberto  </p>
 
     <h1> {{projeto}} </h1>
+
+    <span>{{ logado }}</span>
+
+    {% for produto in produtos %}
+        <a href="{% url 'contados' produto.id %}">{{produto.nome}} </a>
+    {% endfor %}
+
 </body>
 </html>

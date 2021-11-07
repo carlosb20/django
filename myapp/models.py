@@ -9,7 +9,7 @@ class Prpdutos(models.Model):
         return self.nome
 
 class Cliente(models.Model):
-    nome = models.CharField('Nome',max_length=100)
+    nome = models.CharField('nome',max_length=100)
     sobrenome = models.CharField('sobrenome',max_length=100)
     email = models.EmailField('Email',max_length=100)
 
