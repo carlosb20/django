@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel ='stylesheet'href="{% static 'css/estilo.css' %}">
+    
 </head>
 <body>
-
+    <img src ="{% static 'images/django1.png '%}"/>
     <h1> {{projeto}} </h1>
 
     <span>{{ logado }}</span>
@@ -16,5 +19,7 @@
         <a href="{% url 'contados' produto.id %}">{{produto.nome}} </a>
     {% endfor %}
 
+    <button onclick="teste();"> clique </button>
+    <script type = "text/javascript" src="{% static 'js/scrits.js' %}"></script>
 </body>
 </html>
