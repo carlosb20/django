@@ -10,8 +10,8 @@
     
 </head>
 <body>
-    <img src ="{% static 'images/django1.png '%}"/>
-    <h2 class="center"> programação  back-end e front-end </h2>
+    <img class="imagem " src  ="{% static 'images/django1.png '%}"/>
+    <h2 class="center cor"> programação  back-end e front-end </h2>
     <h1> {{projeto}} </h1>
 
     <span>{{ logado }}</span>
@@ -20,7 +20,7 @@
         <a href="{% url 'contados' produto.id %}">{{produto.nome}} </a>
     {% endfor %}
 
-    <button onclick="teste();"> clique </button>
+    <button class="botam " onclick="teste();"> clique </button>
     <script type = "text/javascript" src="{% static 'js/scrits.js' %}"></script>
 </body>
 </html>
